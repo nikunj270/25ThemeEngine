@@ -1,0 +1,34 @@
+{
+  "QPushButton": [
+    {
+      "name": "BtnRecycle",
+      "icon": "../Qss/icons/icons/font_awesome/solid/recycle.png"
+    },
+    {
+      "name": "BtnReuse",
+      "icon": "../Qss/icons/icons/font_awesome/brands/stumbleupon-circle.png"
+    },
+    {
+      "name": "BtnLeftSideDrawer",
+      "icon": "../Qss/icons/icons/font_awesome/solid/align-justify.png"
+    },
+    {
+      "name": "BtnTopSideDrawer",
+      "icon": "../Qss/icons/icons/font_awesome/solid/chevron-up.png"
+    },
+    {
+      "name": "BtnBottomSideDrawer",
+      "icon": "../Qss/icons/icons/font_awesome/solid/chevron-down.png"
+    },
+    {
+      "name": "BtnRightSideDrawer",
+      "icon": "../Qss/icons/icons/font_awesome/solid/chevron-right.png"
+    }
+  ],
+  "QCustomSidebarLabel": [
+    {
+      "name": "customSidebarLabel",
+      "icon": "../Qss/icons/icons/font_awesome/solid/terminal.png"
+    }
+  ]
+}

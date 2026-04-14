@@ -1,0 +1,125 @@
+{
+    "ShowLogs": true,
+    "QtBinding": "PySide6",
+    "CheckForMissingicons": true,
+    "LiveCompileQss": false,
+    "QMainWindow": {
+        "title": "25ThemeEngine",
+        "customSideDrawers": "src\\ui_LeftSideDrawer.py,src\\ui_TopSideDrawer.py,src\\ui_BottomSideDrawer.py,src\\ui_RightSideDrawer.py"
+    },
+    "QSettings": {
+        "AppSettings": {
+            "OrginizationName": "25ThemeEngine Company",
+            "ApplicationName": "25ThemeEngine",
+            "OrginizationDormain": "25ThemeEngine.org"
+        },
+        "ThemeSettings": {
+            "QtDesignerIconsColor": "#41cd52",
+            "CustomThemes": [
+                {
+                    "Theme-name": "QT-Light-theme",
+                    "Background-color": "#ffffff",
+                    "Text-color": "#1e1e1e",
+                    "Accent-color": "#41cd52",
+                    "Icons-color": "#41cd52",
+                    "Default-Theme": true,
+                    "Other-Variables": {
+                        "CARD_RADIUS": "12px",
+                        "FOOTER_BG": "#e5e5e5",
+                        "NAV_BG": "#f0f0f0",
+                        "CARD_BG": "#f8f8f8",
+                        "BORDER_COLOR": "rgba(65, 205, 82, 0.2)",
+                        "HOVER_GLOW": "0 12px 32px rgba(65, 205, 205, 0.25)",
+                        "GRADIENT": "linear-gradient(135deg, #41cd52, #2fa440 100%)",
+                        "SPACING_SM": "8px",
+                        "SPACING_MD": "16px",
+                        "SPACING_LG": "24px",
+                        "Hover-color": "#6ede00",
+                        "Pressed-color": "#e47200",
+                        "Disabled-color": "#a0a0a0"
+                    }
+                },
+                {
+                    "Theme-name": "QT-Dark-theme",
+                    "Background-color": "#1e1e1e",
+                    "Text-color": "#e0e0e0",
+                    "Accent-color": "#41cd52",
+                    "Icons-color": "#41cd52",
+                    "Default-Theme": false,
+                    "Other-Variables": {
+                        "CARD_RADIUS": "12px",
+                        "FOOTER_BG": "#111111",
+                        "NAV_BG": "#1e1e1e",
+                        "CARD_BG": "#2c2c2c",
+                        "BORDER_COLOR": "rgba(65, 205, 82, 0.2)",
+                        "HOVER_GLOW": "0 12px 32px rgba(65, 205, 205, 0.25)",
+                        "GRADIENT": "linear-gradient(135deg, #41cd52, #2fa440 100%)",
+                        "SPACING_SM": "8px",
+                        "SPACING_MD": "16px",
+                        "SPACING_LG": "24px"
+                    }
+                }
+            ]
+        }
+    },
+    "QPushButtonGroup": [{
+		"Buttons": [
+                
+                "leftSidebarComponentContainer.component.menuBtn",
+                "leftSidebarComponentContainer.component.homeBtn",
+                "leftSidebarComponentContainer.component.settingsBtn",
+                "leftSidebarComponentContainer.component.integrationBtn",
+                "leftSidebarComponentContainer.component.financeBtn",
+                "leftSidebarComponentContainer.component.messageBtn",
+                "leftSidebarComponentContainer.component.threadsBtn",
+                "leftSidebarComponentContainer.component.contactsBtn",
+                "leftSidebarComponentContainer.component.exploreBtn",
+                "leftSidebarComponentContainer.component.helpBtn"
+            ],
+            
+            "ActiveButton": "leftSidebarComponentContainer.component.menuBtn",
+			"Style":[
+				{
+					"Active": "QPushButton{border-right : 5px solid THEME.COLOR_ACCENT_3; font-weight: bold;}",
+					"NotActive": ""
+				}
+			]
+		}
+    ],
+
+    "QCustomQStackedWidget":[
+		{
+			"name":"MainBodyComponentContainer.component.MainStack",
+            "transitions": [ 
+                                {							
+                                "active": true,
+                                "duration":1000,
+                                "easingCurve": "OutBack"
+                                }
+                            ],
+					"slide":[
+						{
+							"active":true,
+							"duration": 1000,
+							"direction": "horizontal",
+							"easingCurve": "OutBack"
+						}
+            ],
+			
+			"navigation":[
+				{
+					
+					"navigationButtons":
+						{
+                            "leftSidebarComponentContainer.component.menuBtn": "MainBodyComponentContainer.component.page2",
+							"leftSidebarComponentContainer.component.homeBtn": "MainBodyComponentContainer.component.page1",
+							"leftSidebarComponentContainer.component.settingsBtn":"MainBodyComponentContainer.component.page2"
+						}
+                    
+
+				}
+			]
+	
+		}
+	]
+}
