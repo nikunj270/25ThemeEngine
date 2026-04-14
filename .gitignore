@@ -2,6 +2,7 @@
 1Env/
 venv/
 env/
+Alarm/
 
 # Python cache
 # __pycache__/
