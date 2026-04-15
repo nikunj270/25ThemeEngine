@@ -48,8 +48,6 @@ class MainWindow(QMainWindow):
         self.plc = Exopc(self.ui, self.ui_controller)
         self.button_connector = ConnectButtons(self.ui, self.ui_controller, self)
 
-
-
         ########################################################################
         # APPLY JSON STYLESHEET
         ########################################################################
@@ -62,8 +60,6 @@ class MainWindow(QMainWindow):
         loadJsonStyle(self, self.ui, jsonFiles = {
             "json-styles/style.json"
             }) 
-
-        ########################################################################
 
         #######################################################################
         # SHOW WINDOW
