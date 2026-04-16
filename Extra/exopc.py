@@ -105,21 +105,28 @@ class Exopc():
                 component.customRoundProgressBar_4.style().unpolish(component.customRoundProgressBar_4)
                 component.customRoundProgressBar_4.style().polish(component.customRoundProgressBar_4)
             elif label == "Loading":
+                component.customProgressBar.setProperty("value", int_value)
                 component.customProgressBar.setProperty("customBarColor", QColor(8, 212, 120))
                 component.customProgressBar.style().unpolish(component.customProgressBar)
                 component.customProgressBar.style().polish(component.customProgressBar)
             elif label == "Processing":
+                component.customProgressBar_2.setProperty("value", int_value)
                 component.customProgressBar_2.setProperty("customBarColor", QColor(149, 172, 49))
                 component.customProgressBar_2.style().unpolish(component.customProgressBar_2)
                 component.customProgressBar_2.style().polish(component.customProgressBar_2)
             elif label == "DataSync":
+                component.customProgressBar_3.setProperty("value", int_value)
                 component.customProgressBar_3.setProperty("customBarColor", QColor(78, 161, 184))
                 component.customProgressBar_3.style().unpolish(component.customProgressBar_3)
                 component.customProgressBar_3.style().polish(component.customProgressBar_3)
             elif label == "FileUpload":
+                component.customProgressBar_4.setProperty("value", int_value)
                 component.customProgressBar_4.setProperty("customBarColor", QColor(255, 105, 105))
                 component.customProgressBar_4.style().unpolish(component.customProgressBar_4)
                 component.customProgressBar_4.style().polish(component.customProgressBar_4)
 
         except Exception as e:
             self.ui_controller.log_to_console(f"PLC UI update error ({label}): {e}")
+
+    def stop(self):
+        self._plc_worker.stop()

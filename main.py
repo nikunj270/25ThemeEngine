@@ -2,9 +2,6 @@
 ## QT GUI BY SPINN TV(YOUTUBE)
 ########################################################################
 
-########################################################################
-## IMPORTS
-########################################################################
 import os
 import sys
 ########################################################################
@@ -20,10 +17,7 @@ from src.ui_QCustomQMainWindow import *
 from Custom_Widgets import *
 from Custom_Widgets.QAppSettings import QAppSettings
 ########################################################################
-from PySide6.QtCore import QTimer
-from PySide6.QtGui import QColor
-#from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox
-
+from PySide6.QtWidgets import QApplication
 
 from datetime import datetime
 from Extra.Functions import UIController
@@ -90,7 +84,7 @@ class MainWindow(QMainWindow):
         # set the theme name from json file
         # self.themeEngine.theme = "Default-theme" #or Light, Dark or any custom theme name from the json file
         # self.themeEngine.theme = "Dark" 
-        self.themeEngine.theme = "Light" 
+        self.themeEngine.theme = "Light"
         ########################################################################
         init_logger()
         self.plc_client = OPCClient()
@@ -99,8 +93,8 @@ class MainWindow(QMainWindow):
     def closeEvent(self, event):
         try:
             if hasattr(self, "plc"):
-                self.plc.stop()   # stop OPC worker
-        except:
+                self.plc.stop()
+        except Exception:
             pass
 
         event.accept()

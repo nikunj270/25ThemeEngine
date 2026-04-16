@@ -3,7 +3,8 @@ import os
 import sqlite3
 from datetime import datetime, timedelta
 from Tag.tags import Tags
-FILE_PATH = "report/csv/trend_log.csv"
+
+FILE_PATH = os.path.join("data_logs", "report/csv/trend_log.csv")
 
 BF = "data_logs"
 
@@ -19,6 +20,7 @@ def init_csv():
 def get_file_path():
     os.makedirs(BF, exist_ok=True)
     return datetime.now().strftime(f"{BF}/%Y-%m-%d.csv")
+
 def init_file(file_path):
     with open(file_path, mode="w", newline="") as f:
         writer = csv.writer(f)
@@ -30,6 +32,7 @@ def log_to_csv():
     D0 = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     D1 = Tags.Temperature
     D2 = Tags.Motor
+    D3 = Tags.Pressure
 
     if not os.path.exists(file_p):
         #init_csv()
@@ -41,9 +44,10 @@ def log_to_csv():
 
         with open(file_p, mode="a", newline="") as file:
             writer = csv.writer(file)
-            writer.writerow([D0,D1,D2])            
+            writer.writerow([D0,D1,D2,D3])            
 
 def export_db_to_csv(db_path="Database/alarms.db", output=datetime.now().strftime("data_logs/db_csv/dd%Y-%m-%d.csv")):
+    os.makedirs(os.path.dirname(output), exist_ok=True)
 
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
@@ -64,9 +68,10 @@ def export_db_to_csv(db_path="Database/alarms.db", output=datetime.now().strftim
     return output
 
 def export_range(start_dt, end_dt, output_file="data_logs/dateexport.csv"):
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
     all_rows = []
-    headers_written = False
+    final_headers = None
 
     for file in os.listdir(BF):
 
@@ -80,21 +85,20 @@ def export_range(start_dt, end_dt, output_file="data_logs/dateexport.csv"):
             headers = next(reader)
 
             for row in reader:
-                # print(row[0])
-                # print(row[1])
-                # print(row[2])
                 try:
                     row_time = datetime.strptime(row[0], "%Y-%m-%d %H:%M:%S")
-                except Exception as e:
-                    print("please check all files of data & slect date")
-
+                except Exception:
+                    print("please check all files of data & select date")
+                    continue
 
                 if start_dt <= row_time <= end_dt:
                     all_rows.append(row)
 
-        if not headers_written:
+        if final_headers is None:
             final_headers = headers
-            headers_written = True
+
+    if final_headers is None:
+        final_headers = ["Timestamp", "Temperature", "Motor", "Pressure"]
 
     # Write filtered data
     with open(output_file, "w", newline="") as f:
@@ -112,8 +116,13 @@ def delete_old_files(days=7):
 
     for file in os.listdir(BF):
         file_path = os.path.join(BF, file)
+        if not os.path.isfile(file_path) or not file.endswith(".csv"):
+            continue
 
-        file_time = datetime.strptime(file.replace(".csv", ""), "%Y-%m-%d")
+        try:
+            file_time = datetime.strptime(file.replace(".csv", ""), "%Y-%m-%d")
+        except ValueError:
+            continue
 
         if now - file_time > timedelta(days=days):
             os.remove(file_path)

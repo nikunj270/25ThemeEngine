@@ -2,12 +2,16 @@
 1Env/
 venv/
 env/
-Alarm/
 
 # Python cache
-# __pycache__/
-# *.pyc
+__pycache__/
+*.pyc
 
-# # Qt / build
-# build/
-# dist/
+# Qt / build
+build/
+dist/
+
+# Runtime data
+logs/
+data_logs/
+Database/*.db

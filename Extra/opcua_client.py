@@ -7,7 +7,7 @@ import traceback
 from opcua import Client, ua
 from PySide6.QtCore import QObject, Signal, Slot
 from PySide6.QtCore import QThread
-from typing import Dict, Any, Optional, Set
+from typing import Dict, Any, Optional
 
 
 class OPCUAWorker(QObject):
@@ -65,8 +65,8 @@ class OPCUAWorker(QObject):
         self._is_connected = False
 
         # Subscriptions
-        self._subscriptions: Dict[str, dict] = {}   # label -> {node_id, handler}
-        self._label_for_node: Dict[str, str] = {}    # node_id -> label
+        self._subscriptions: Dict[str, dict] = {}   # label -> {node_id, subscription, handle}
+        self._label_for_node: Dict[str, str] = {}   # node_id -> label
 
         # Reconnect state
         self._reconnect_attempt = 0
@@ -92,7 +92,8 @@ class OPCUAWorker(QObject):
 
     def start(self):
         """Start the worker thread. Call once from GUI."""
-        self._thread.start()
+        if not self._thread.isRunning():
+            self._thread.start()
 
     def stop(self):
         self._running = False
@@ -100,6 +101,13 @@ class OPCUAWorker(QObject):
 
         if self._loop and self._loop.is_running():
             def shutdown():
+                if self._reconnect_task and not self._reconnect_task.done():
+                    self._reconnect_task.cancel()
+                if self._client is not None:
+                    try:
+                        self._client.disconnect()
+                    except Exception:
+                        pass
                 for task in asyncio.all_tasks(loop=self._loop):
                     task.cancel()
                 self._loop.stop()
@@ -113,7 +121,6 @@ class OPCUAWorker(QObject):
     def connect(self):
         """Initiate OPC UA connection."""
         self._intentional_disconnect = False
-        self._loop.call_soon_threadsafe(self._schedule_connect)
         if self._loop is None:
             return
         self._loop.call_soon_threadsafe(self._schedule_connect)
@@ -182,10 +189,10 @@ class OPCUAWorker(QObject):
     # ------------------------------------------------------------------
 
     def _schedule_connect(self):
-        asyncio.ensure_future(self._async_connect())
+        asyncio.create_task(self._async_connect())
 
     def _schedule_disconnect(self):
-        asyncio.ensure_future(self._async_disconnect())
+        asyncio.create_task(self._async_disconnect())
 
     # ------------------------------------------------------------------
     # Async internals — all run in the worker thread's event loop
@@ -203,7 +210,7 @@ class OPCUAWorker(QObject):
             self._client = Client(self.endpoint, timeout=10)
             if self.security_mode != "none":
                 self._client.set_security_string(self.security_mode)
-            await self._client.connect()
+            self._client.connect()
             self._is_connected = True
             self._reconnect_attempt = 0
             print(f"[OPCUA] Connected to {self.endpoint}")
@@ -225,7 +232,7 @@ class OPCUAWorker(QObject):
     async def _monitor_connection(self):
         while self._is_connected:
             try:
-                await self._client.check_connection()
+                self._client.get_node(ua.ObjectIds.Server_ServerStatus_State).get_value()
             except Exception:
                 self.log.emit("Connection lost detected by monitor")
                 self._is_connected = False
@@ -246,7 +253,7 @@ class OPCUAWorker(QObject):
         """Safely close the client connection."""
         if self._client is not None:
             try:
-                await self._client.disconnect()
+                self._client.disconnect()
             except Exception:
                 pass
             self._client = None
@@ -303,21 +310,22 @@ class OPCUAWorker(QObject):
             self.error.emit(f"Subscribe '{label}': not connected")
             return
         try:
-            self._label_for_node[node_id] = label
             ua_node = self._client.get_node(node_id)
-
-            def _on_data_change(notification: ua.DataChangeNotification):
-                try:
-                    raw = notification.monitored_item.Value.Value
-                    self.data_changed.emit(label, raw)
-                except Exception as exc:
-                    self.log.emit(f"Subscription callback error ({label}): {exc}")
-
             handler = SubHandler(self, label)
-            self._subscriptions = await self._client.create_subscription(100, handler)
+            existing = self._subscriptions.get(label)
+            if existing and existing.get("subscription") is not None:
+                try:
+                    existing["subscription"].delete()
+                except Exception:
+                    pass
 
-            await self.subscribe.subscribe_data_change(ua_node)
-            self._subscriptions[label]["handler"] = self._subscriptions
+            subscription = self._client.create_subscription(100, handler)
+            handle = subscription.subscribe_data_change(ua_node)
+            self._subscriptions[label] = {
+                "node_id": node_id,
+                "subscription": subscription,
+                "handle": handle,
+            }
             self.log.emit(f"Subscribed to {label} ({node_id})")
 
         except Exception as e:
@@ -346,7 +354,7 @@ class OPCUAWorker(QObject):
         try:
             ua_node = self._client.get_node(node_id)
             dv = ua.DataValue(ua.Variant(value))
-            await ua_node.set_value(dv)
+            ua_node.set_value(dv)
             self.write_done.emit(label, True, "")
         except Exception as e:
             self.write_done.emit(label, False, str(e))
@@ -362,10 +370,10 @@ class OPCUAWorker(QObject):
             return
         try:
             root = self._client.get_root_node()
-            children = await root.get_children()
+            children = root.get_children()
             for i, child in enumerate(children):
-                name = await child.read_browse_name()
-                node_class = await child.read_node_class()
+                name = child.get_browse_name()
+                node_class = child.get_node_class()
                 self.data_changed.emit(
                     f"[{i}] {name.Name}", node_class.name
                 )
