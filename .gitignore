@@ -2,7 +2,7 @@
 1Env/
 venv/
 env/
-
+Extra/
 # Python cache
 __pycache__/
 *.pyc

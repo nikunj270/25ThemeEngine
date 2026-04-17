@@ -30,7 +30,7 @@ class Ui_CustomComponent(object):
     def setupUi(self, CustomComponent):
         if not CustomComponent.objectName():
             CustomComponent.setObjectName(u"CustomComponent")
-        CustomComponent.resize(993, 643)
+        CustomComponent.resize(989, 526)
         self.verticalLayout = QVBoxLayout(CustomComponent)
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
@@ -148,16 +148,159 @@ class Ui_CustomComponent(object):
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.widget_19.sizePolicy().hasHeightForWidth())
         self.widget_19.setSizePolicy(sizePolicy2)
-        self.horizontalLayout_12 = QHBoxLayout(self.widget_19)
-        self.horizontalLayout_12.setSpacing(0)
-        self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
-        self.horizontalLayout_12.setContentsMargins(0, 0, 0, 0)
-        self.Btn4 = QPushButton(self.widget_19)
-        self.Btn4.setObjectName(u"Btn4")
-        sizePolicy.setHeightForWidth(self.Btn4.sizePolicy().hasHeightForWidth())
-        self.Btn4.setSizePolicy(sizePolicy)
+        self.verticalLayout_14 = QVBoxLayout(self.widget_19)
+        self.verticalLayout_14.setSpacing(0)
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.verticalLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.widget_20 = QWidget(self.widget_19)
+        self.widget_20.setObjectName(u"widget_20")
+        self.verticalLayout_15 = QVBoxLayout(self.widget_20)
+        self.verticalLayout_15.setObjectName(u"verticalLayout_15")
+        self.widget_23 = QWidget(self.widget_20)
+        self.widget_23.setObjectName(u"widget_23")
 
-        self.horizontalLayout_12.addWidget(self.Btn4)
+        self.verticalLayout_15.addWidget(self.widget_23)
+
+        self.widget_22 = QWidget(self.widget_20)
+        self.widget_22.setObjectName(u"widget_22")
+        sizePolicy.setHeightForWidth(self.widget_22.sizePolicy().hasHeightForWidth())
+        self.widget_22.setSizePolicy(sizePolicy)
+        self.widget_22.setMaximumSize(QSize(16777215, 16777214))
+        self.widget_22.setStyleSheet(u"QPushButton\n"
+"{\n"
+"border-radius: 10px;\n"
+"border: 4px solid rgb(70,70,70);\n"
+"border-top-color: rgb(210, 210, 210);\n"
+"border-left-color: rgb(210, 210, 210);\n"
+"background-color: rgb(177, 177, 177);\n"
+"}\n"
+"")
+        self.horizontalLayout_12 = QHBoxLayout(self.widget_22)
+        self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_12.addItem(self.horizontalSpacer_2)
+
+        self.widget_24 = QWidget(self.widget_22)
+        self.widget_24.setObjectName(u"widget_24")
+
+        self.horizontalLayout_12.addWidget(self.widget_24)
+
+        self.widget_25 = QWidget(self.widget_22)
+        self.widget_25.setObjectName(u"widget_25")
+        sizePolicy2.setHeightForWidth(self.widget_25.sizePolicy().hasHeightForWidth())
+        self.widget_25.setSizePolicy(sizePolicy2)
+        self.verticalLayout_16 = QVBoxLayout(self.widget_25)
+        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
+        self.widget_27 = QWidget(self.widget_25)
+        self.widget_27.setObjectName(u"widget_27")
+        sizePolicy.setHeightForWidth(self.widget_27.sizePolicy().hasHeightForWidth())
+        self.widget_27.setSizePolicy(sizePolicy)
+        self.widget_27.setMinimumSize(QSize(0, 0))
+        self.widget_27.setMaximumSize(QSize(16777215, 16777214))
+        self.horizontalLayout_14 = QHBoxLayout(self.widget_27)
+        self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
+        self.pushButton = QPushButton(self.widget_27)
+        self.pushButton.setObjectName(u"pushButton")
+        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
+        self.pushButton.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_14.addWidget(self.pushButton)
+
+        self.pushButton_3 = QPushButton(self.widget_27)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        sizePolicy.setHeightForWidth(self.pushButton_3.sizePolicy().hasHeightForWidth())
+        self.pushButton_3.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_14.addWidget(self.pushButton_3)
+
+        self.pushButton_2 = QPushButton(self.widget_27)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        sizePolicy.setHeightForWidth(self.pushButton_2.sizePolicy().hasHeightForWidth())
+        self.pushButton_2.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_14.addWidget(self.pushButton_2)
+
+        self.pushButton_7 = QPushButton(self.widget_27)
+        self.pushButton_7.setObjectName(u"pushButton_7")
+        sizePolicy.setHeightForWidth(self.pushButton_7.sizePolicy().hasHeightForWidth())
+        self.pushButton_7.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_14.addWidget(self.pushButton_7)
+
+
+        self.verticalLayout_16.addWidget(self.widget_27)
+
+        self.widget_28 = QWidget(self.widget_25)
+        self.widget_28.setObjectName(u"widget_28")
+        self.widget_28.setMaximumSize(QSize(16777215, 16777214))
+        self.horizontalLayout_15 = QHBoxLayout(self.widget_28)
+        self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
+        self.pushButton_4 = QPushButton(self.widget_28)
+        self.pushButton_4.setObjectName(u"pushButton_4")
+        sizePolicy.setHeightForWidth(self.pushButton_4.sizePolicy().hasHeightForWidth())
+        self.pushButton_4.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_15.addWidget(self.pushButton_4)
+
+        self.pushButton_5 = QPushButton(self.widget_28)
+        self.pushButton_5.setObjectName(u"pushButton_5")
+        sizePolicy.setHeightForWidth(self.pushButton_5.sizePolicy().hasHeightForWidth())
+        self.pushButton_5.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_15.addWidget(self.pushButton_5)
+
+        self.pushButton_6 = QPushButton(self.widget_28)
+        self.pushButton_6.setObjectName(u"pushButton_6")
+        sizePolicy.setHeightForWidth(self.pushButton_6.sizePolicy().hasHeightForWidth())
+        self.pushButton_6.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_15.addWidget(self.pushButton_6)
+
+        self.pushButton_8 = QPushButton(self.widget_28)
+        self.pushButton_8.setObjectName(u"pushButton_8")
+        sizePolicy.setHeightForWidth(self.pushButton_8.sizePolicy().hasHeightForWidth())
+        self.pushButton_8.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_15.addWidget(self.pushButton_8)
+
+
+        self.verticalLayout_16.addWidget(self.widget_28)
+
+
+        self.horizontalLayout_12.addWidget(self.widget_25)
+
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_12.addItem(self.horizontalSpacer)
+
+        self.widget_26 = QWidget(self.widget_22)
+        self.widget_26.setObjectName(u"widget_26")
+
+        self.horizontalLayout_12.addWidget(self.widget_26)
+
+
+        self.verticalLayout_15.addWidget(self.widget_22)
+
+        self.widget_21 = QWidget(self.widget_20)
+        self.widget_21.setObjectName(u"widget_21")
+        self.horizontalLayout_19 = QHBoxLayout(self.widget_21)
+        self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
+        self.widget_34 = QWidget(self.widget_21)
+        self.widget_34.setObjectName(u"widget_34")
+
+        self.horizontalLayout_19.addWidget(self.widget_34)
+
+        self.widget_38 = QWidget(self.widget_21)
+        self.widget_38.setObjectName(u"widget_38")
+
+        self.horizontalLayout_19.addWidget(self.widget_38)
+
+
+        self.verticalLayout_15.addWidget(self.widget_21)
+
+
+        self.verticalLayout_14.addWidget(self.widget_20)
 
 
         self.verticalLayout_13.addWidget(self.widget_19)
@@ -186,12 +329,133 @@ class Ui_CustomComponent(object):
         self.horizontalLayout_10.setSpacing(0)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
         self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
-        self.Btn3 = QPushButton(self.widget_17)
-        self.Btn3.setObjectName(u"Btn3")
-        sizePolicy.setHeightForWidth(self.Btn3.sizePolicy().hasHeightForWidth())
-        self.Btn3.setSizePolicy(sizePolicy)
+        self.widget_29 = QWidget(self.widget_17)
+        self.widget_29.setObjectName(u"widget_29")
+        self.verticalLayout_18 = QVBoxLayout(self.widget_29)
+        self.verticalLayout_18.setObjectName(u"verticalLayout_18")
+        self.widget_35 = QWidget(self.widget_29)
+        self.widget_35.setObjectName(u"widget_35")
 
-        self.horizontalLayout_10.addWidget(self.Btn3)
+        self.verticalLayout_18.addWidget(self.widget_35)
+
+        self.widget_36 = QWidget(self.widget_29)
+        self.widget_36.setObjectName(u"widget_36")
+        self.widget_36.setStyleSheet(u"QPushButton\n"
+"{\n"
+"border-radius: 10px;\n"
+"border: 4px solid rgb(70,70,70);\n"
+"border-top-color: rgb(210, 210, 210);\n"
+"border-left-color: rgb(210, 210, 210);\n"
+"background-color: rgb(177, 177, 177);\n"
+"}\n"
+"")
+        self.horizontalLayout_18 = QHBoxLayout(self.widget_36)
+        self.horizontalLayout_18.setObjectName(u"horizontalLayout_18")
+        self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_18.addItem(self.horizontalSpacer_4)
+
+        self.widget_30 = QWidget(self.widget_36)
+        self.widget_30.setObjectName(u"widget_30")
+
+        self.horizontalLayout_18.addWidget(self.widget_30)
+
+        self.widget_31 = QWidget(self.widget_36)
+        self.widget_31.setObjectName(u"widget_31")
+        sizePolicy2.setHeightForWidth(self.widget_31.sizePolicy().hasHeightForWidth())
+        self.widget_31.setSizePolicy(sizePolicy2)
+        self.verticalLayout_17 = QVBoxLayout(self.widget_31)
+        self.verticalLayout_17.setObjectName(u"verticalLayout_17")
+        self.widget_32 = QWidget(self.widget_31)
+        self.widget_32.setObjectName(u"widget_32")
+        sizePolicy.setHeightForWidth(self.widget_32.sizePolicy().hasHeightForWidth())
+        self.widget_32.setSizePolicy(sizePolicy)
+        self.widget_32.setMinimumSize(QSize(0, 0))
+        self.horizontalLayout_16 = QHBoxLayout(self.widget_32)
+        self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
+        self.pushButton_9 = QPushButton(self.widget_32)
+        self.pushButton_9.setObjectName(u"pushButton_9")
+        sizePolicy.setHeightForWidth(self.pushButton_9.sizePolicy().hasHeightForWidth())
+        self.pushButton_9.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_16.addWidget(self.pushButton_9)
+
+        self.pushButton_10 = QPushButton(self.widget_32)
+        self.pushButton_10.setObjectName(u"pushButton_10")
+        sizePolicy.setHeightForWidth(self.pushButton_10.sizePolicy().hasHeightForWidth())
+        self.pushButton_10.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_16.addWidget(self.pushButton_10)
+
+        self.pushButton_11 = QPushButton(self.widget_32)
+        self.pushButton_11.setObjectName(u"pushButton_11")
+        sizePolicy.setHeightForWidth(self.pushButton_11.sizePolicy().hasHeightForWidth())
+        self.pushButton_11.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_16.addWidget(self.pushButton_11)
+
+        self.pushButton_12 = QPushButton(self.widget_32)
+        self.pushButton_12.setObjectName(u"pushButton_12")
+        sizePolicy.setHeightForWidth(self.pushButton_12.sizePolicy().hasHeightForWidth())
+        self.pushButton_12.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_16.addWidget(self.pushButton_12)
+
+
+        self.verticalLayout_17.addWidget(self.widget_32)
+
+        self.widget_33 = QWidget(self.widget_31)
+        self.widget_33.setObjectName(u"widget_33")
+        self.horizontalLayout_17 = QHBoxLayout(self.widget_33)
+        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.pushButton_13 = QPushButton(self.widget_33)
+        self.pushButton_13.setObjectName(u"pushButton_13")
+        sizePolicy.setHeightForWidth(self.pushButton_13.sizePolicy().hasHeightForWidth())
+        self.pushButton_13.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_17.addWidget(self.pushButton_13)
+
+        self.pushButton_14 = QPushButton(self.widget_33)
+        self.pushButton_14.setObjectName(u"pushButton_14")
+        sizePolicy.setHeightForWidth(self.pushButton_14.sizePolicy().hasHeightForWidth())
+        self.pushButton_14.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_17.addWidget(self.pushButton_14)
+
+        self.pushButton_15 = QPushButton(self.widget_33)
+        self.pushButton_15.setObjectName(u"pushButton_15")
+        sizePolicy.setHeightForWidth(self.pushButton_15.sizePolicy().hasHeightForWidth())
+        self.pushButton_15.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_17.addWidget(self.pushButton_15)
+
+        self.pushButton_16 = QPushButton(self.widget_33)
+        self.pushButton_16.setObjectName(u"pushButton_16")
+        sizePolicy.setHeightForWidth(self.pushButton_16.sizePolicy().hasHeightForWidth())
+        self.pushButton_16.setSizePolicy(sizePolicy)
+
+        self.horizontalLayout_17.addWidget(self.pushButton_16)
+
+
+        self.verticalLayout_17.addWidget(self.widget_33)
+
+
+        self.horizontalLayout_18.addWidget(self.widget_31)
+
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_18.addItem(self.horizontalSpacer_3)
+
+
+        self.verticalLayout_18.addWidget(self.widget_36)
+
+        self.widget_37 = QWidget(self.widget_29)
+        self.widget_37.setObjectName(u"widget_37")
+
+        self.verticalLayout_18.addWidget(self.widget_37)
+
+
+        self.horizontalLayout_10.addWidget(self.widget_29)
 
 
         self.verticalLayout_12.addWidget(self.widget_17)
@@ -275,7 +539,7 @@ class Ui_CustomComponent(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 941, 138))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 428, 138))
         self.horizontalLayout_2 = QHBoxLayout(self.scrollAreaWidgetContents)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.widget_6 = QWidget(self.scrollAreaWidgetContents)
@@ -391,7 +655,7 @@ class Ui_CustomComponent(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 953, 54))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 814, 52))
         self.horizontalLayout_7 = QHBoxLayout(self.scrollAreaWidgetContents_2)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.widget_10 = QWidget(self.scrollAreaWidgetContents_2)
@@ -405,8 +669,8 @@ class Ui_CustomComponent(object):
 
         self.customProgressBar = QCustomQProgressBar(self.widget_10)
         self.customProgressBar.setObjectName(u"customProgressBar")
-        self.customProgressBar.setProperty(u"shortPos", 0.948679471788715)
-        self.customProgressBar.setProperty(u"longPos", 1.750000000000000)
+        self.customProgressBar.setProperty(u"shortPos", 1.450000000000000)
+        self.customProgressBar.setProperty(u"longPos", 1.122157532662354)
         self.customProgressBar.setProperty(u"paused", False)
         self.customProgressBar.setProperty(u"customBarColor", QColor(8, 212, 120))
 
@@ -537,7 +801,7 @@ class Ui_CustomComponent(object):
 
         self.retranslateUi(CustomComponent)
 
-        self.MainStack.setCurrentIndex(0)
+        self.MainStack.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(CustomComponent)
@@ -549,8 +813,22 @@ class Ui_CustomComponent(object):
         self.BtnRecycle.setText("")
         self.BtnReuse.setText("")
         self.label_21.setText(QCoreApplication.translate("CustomComponent", u"TextLabel", None))
-        self.Btn4.setText(QCoreApplication.translate("CustomComponent", u"PAGE 4", None))
-        self.Btn3.setText(QCoreApplication.translate("CustomComponent", u"PAGE 3", None))
+        self.pushButton.setText(QCoreApplication.translate("CustomComponent", u"REC 1", None))
+        self.pushButton_3.setText(QCoreApplication.translate("CustomComponent", u"REC 2", None))
+        self.pushButton_2.setText(QCoreApplication.translate("CustomComponent", u"REC 3", None))
+        self.pushButton_7.setText(QCoreApplication.translate("CustomComponent", u"REC 4", None))
+        self.pushButton_4.setText(QCoreApplication.translate("CustomComponent", u"REC 5", None))
+        self.pushButton_5.setText(QCoreApplication.translate("CustomComponent", u"REC 6", None))
+        self.pushButton_6.setText(QCoreApplication.translate("CustomComponent", u"REC 7", None))
+        self.pushButton_8.setText(QCoreApplication.translate("CustomComponent", u"Next", None))
+        self.pushButton_9.setText(QCoreApplication.translate("CustomComponent", u"REC 1", None))
+        self.pushButton_10.setText(QCoreApplication.translate("CustomComponent", u"REC 2", None))
+        self.pushButton_11.setText(QCoreApplication.translate("CustomComponent", u"REC 3", None))
+        self.pushButton_12.setText(QCoreApplication.translate("CustomComponent", u"REC 4", None))
+        self.pushButton_13.setText(QCoreApplication.translate("CustomComponent", u"REC 5", None))
+        self.pushButton_14.setText(QCoreApplication.translate("CustomComponent", u"REC 6", None))
+        self.pushButton_15.setText(QCoreApplication.translate("CustomComponent", u"REC 7", None))
+        self.pushButton_16.setText(QCoreApplication.translate("CustomComponent", u"Next", None))
         self.label.setText(QCoreApplication.translate("CustomComponent", u"ROSH Progress Dashboa", None))
         self.BtnLeftSideDrawer.setText(QCoreApplication.translate("CustomComponent", u"Left Drawer", None))
         self.BtnTopSideDrawer.setText(QCoreApplication.translate("CustomComponent", u"Top Drawer", None))

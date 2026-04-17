@@ -25,7 +25,7 @@ class Ui_CustomMainWindow(object):
     def setupUi(self, CustomMainWindow):
         if not CustomMainWindow.objectName():
             CustomMainWindow.setObjectName(u"CustomMainWindow")
-        CustomMainWindow.resize(1142, 812)
+        CustomMainWindow.resize(1140, 716)
         CustomMainWindow.setProperty(u"liveCompileStylesheet", False)
         CustomMainWindow.setProperty(u"paintQtDesignerUI", True)
         self.centralwidget = QWidget(CustomMainWindow)

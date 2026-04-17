@@ -36,8 +36,8 @@ class UIController:
         Mmapping = {
             "BtnRecycle" : ("page3", "Recycle button clicked!"),
             "BtnReuse" : ("page4", "Reuse button clicked!"),
-            "Btn3" : ("page2", "Button 3 clicked!"),
-            "Btn4" : ("page2", "Button 4 clicked!"),
+            "pushButton_8" : ("page4", "Button 3 clicked!"),
+            "pushButton_16" : ("page3", "Button 4 clicked!"),
            }
         
         for button_name, (page_name,msg) in Mmapping.items():

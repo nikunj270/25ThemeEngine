@@ -3,7 +3,7 @@ import os
 import sys
 from Extra.opcua_client import OPCUAWorker
 from Extra.plc_tags import PLC_TAGS, OPCUA_ENDPOINT, OPCUA_SECURITY_MODE
-from Extra.Functions import UIController
+from Navi.Functions import UIController
 from PySide6.QtCore import QMetaObject, Qt, QTimer
 from PySide6.QtGui import QColor
 ########################################################################

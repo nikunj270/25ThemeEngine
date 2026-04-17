@@ -2880,3 +2880,451 @@ sass.CompileError: Error: Undefined variable: "$SPACING-MD".
 2026-04-11 11:35:22,118 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
 2026-04-11 11:35:22,121 - root - INFO - QR code generated successfully
 2026-04-11 11:35:22,121 - root - INFO - Using cached QR code
+2026-04-16 16:07:09,163 - root - INFO - Registering Custom Widgets
+2026-04-16 16:07:09,179 - root - INFO - Registering QCustomQMainWindow
+2026-04-16 16:07:09,186 - root - INFO - Registering QAvatarWidget
+2026-04-16 16:07:09,191 - root - INFO - Registering QBadgeWidget
+2026-04-16 16:07:09,199 - root - INFO - Registering AnalogGaugeWidget
+2026-04-16 16:07:09,205 - root - INFO - Registering QCustomThemeList
+2026-04-16 16:07:09,213 - root - INFO - Registering QCustomThemeDarkLightToggle
+2026-04-16 16:07:09,216 - root - INFO - Registering QCustomCheckBox
+2026-04-16 16:07:09,219 - root - INFO - Registering QCustomSidebar
+2026-04-16 16:07:09,224 - root - INFO - Registering QCustomHamburgerMenu
+2026-04-16 16:07:09,230 - root - INFO - Registering QCustomHorizontalSeparator
+2026-04-16 16:07:09,237 - root - INFO - Registering QCustomVerticalSeparator
+2026-04-16 16:07:09,241 - root - INFO - Registering QCustomSidebarLabel
+2026-04-16 16:07:09,245 - root - INFO - Registering QCustomSidebarButton
+2026-04-16 16:07:09,252 - root - INFO - Registering QCustomRoundProgressBar
+2026-04-16 16:07:09,260 - root - INFO - Registering QCustomComponent
+2026-04-16 16:07:09,268 - root - INFO - Registering QCustomComponentContainer
+2026-04-16 16:07:09,274 - root - INFO - Registering QCustomQStackedWidget
+2026-04-16 16:07:09,296 - root - INFO - Registering QCustomQProgressBar
+2026-04-16 16:07:09,365 - root - INFO - Registering QCustomQRGenerator
+2026-04-16 16:07:09,492 - root - INFO - Registering QCustomLineChart
+2026-04-16 16:07:09,518 - root - INFO - QCustomLineChart registered successfully
+2026-04-16 16:07:09,519 - root - INFO - Registering QCustomBarChart
+2026-04-16 16:07:09,520 - root - INFO - QCustomBarChart registered successfully
+2026-04-16 16:07:09,522 - root - INFO - Registering QCustomAreaChart
+2026-04-16 16:07:09,523 - root - INFO - QCustomAreaChart registered successfully
+2026-04-16 16:07:09,524 - root - INFO - Registering QCustomPieChart
+2026-04-16 16:07:09,525 - root - INFO - QCustomPieChart registered successfully
+2026-04-16 16:07:09,526 - root - INFO - ✓ All chart widgets registered successfully!
+2026-04-16 16:07:09,656 - root - DEBUG - Failed to load Product Sans font
+2026-04-16 16:07:09,658 - root - DEBUG - Added SASS file to watcher: D:\Vishwa\Qt\25ThemeEngine\Qss\scss\defaultStyle.scss
+2026-04-16 16:07:09,659 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 16:07:09,660 - root - INFO -    • defaultStyle.scss
+2026-04-16 16:07:09,662 - root - INFO - File listener disabled
+2026-04-16 16:07:09,663 - root - INFO - Copied variable 'SPACING_LG' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,664 - root - INFO - Copied variable 'Pressed-color' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,665 - root - INFO - Copied variable 'SPACING_MD' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,666 - root - INFO - Copied variable 'NAV_BG' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,666 - root - INFO - Copied variable 'HOVER_GLOW' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,667 - root - INFO - Copied variable 'Hover-color' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,668 - root - INFO - Copied variable 'GRADIENT' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,668 - root - INFO - Copied variable 'CARD_RADIUS' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,669 - root - INFO - Copied variable 'SPACING_SM' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,670 - root - INFO - Copied variable 'BORDER_COLOR' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,670 - root - INFO - Copied variable 'CARD_BG' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,671 - root - INFO - Copied variable 'FOOTER_BG' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,673 - root - INFO - Copied variable 'Disabled-color' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 16:07:09,674 - root - INFO - Copied variable 'SPACING_LG' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,674 - root - INFO - Copied variable 'Pressed-color' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,675 - root - INFO - Copied variable 'SPACING_MD' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,675 - root - INFO - Copied variable 'NAV_BG' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,676 - root - INFO - Copied variable 'HOVER_GLOW' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,677 - root - INFO - Copied variable 'Hover-color' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,677 - root - INFO - Copied variable 'GRADIENT' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,678 - root - INFO - Copied variable 'CARD_RADIUS' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,679 - root - INFO - Copied variable 'SPACING_SM' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,679 - root - INFO - Copied variable 'BORDER_COLOR' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,680 - root - INFO - Copied variable 'CARD_BG' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,680 - root - INFO - Copied variable 'FOOTER_BG' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,681 - root - INFO - Copied variable 'Disabled-color' from theme 'Light' to theme 'Dark'
+2026-04-16 16:07:09,682 - root - INFO - Copied variable 'Pressed-color' from theme 'Light' to theme 'QT-Dark-theme'
+2026-04-16 16:07:09,682 - root - INFO - Copied variable 'Hover-color' from theme 'Light' to theme 'QT-Dark-theme'
+2026-04-16 16:07:09,683 - root - INFO - Copied variable 'Disabled-color' from theme 'Light' to theme 'QT-Dark-theme'
+2026-04-16 16:07:09,685 - root - INFO - Should live compile stylesheet?: False
+2026-04-16 16:07:09,685 - root - INFO - Should paint Qt Designer UI?: False
+2026-04-16 16:07:09,723 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 16:07:09,724 - root - INFO -    • defaultStyle.scss
+2026-04-16 16:07:09,724 - root - INFO - QSS file monitor started
+2026-04-16 16:07:09,728 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 16:07:09,729 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 16:07:09,730 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 16:07:09,730 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 16:07:09,731 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 16:07:09,732 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 16:07:09,736 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 16:07:09,765 - root - INFO - QR code generated successfully
+2026-04-16 16:07:09,771 - root - INFO - Using cached QR code
+2026-04-16 16:07:09,790 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 16:07:09,796 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 16:07:09,811 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 16:07:09,813 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 16:07:09,821 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 16:07:09,822 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 16:07:09,832 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 16:07:09,833 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 16:07:10,252 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 16:07:10,254 - root - INFO -    • defaultStyle.scss
+2026-04-16 16:07:10,255 - root - INFO - QSS file monitor started
+2026-04-16 16:07:10,259 - root - INFO - File listener disabled
+2026-04-16 16:07:10,261 - root - INFO - File listener disabled
+2026-04-16 16:07:29,910 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 16:07:29,911 - root - INFO -    • defaultStyle.scss
+2026-04-16 16:07:29,912 - root - INFO - QSS file monitor started
+2026-04-16 16:07:29,933 - root - CRITICAL - Button with name 'menuBtn' not found.
+2026-04-16 16:07:33,870 - root - INFO - File listener disabled
+2026-04-16 16:07:33,898 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 16:07:33,899 - root - INFO -    • defaultStyle.scss
+2026-04-16 16:07:33,900 - root - INFO - QSS file monitor started
+2026-04-16 16:07:33,981 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 16:07:33,981 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 16:07:33,982 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 16:07:33,983 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 16:07:33,983 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 16:07:33,984 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 16:07:33,988 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 16:07:33,991 - root - INFO - QR code generated successfully
+2026-04-16 16:07:33,992 - root - INFO - Using cached QR code
+2026-04-16 16:07:34,042 - root - INFO - File listener disabled
+2026-04-16 16:07:34,058 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 16:07:34,059 - root - INFO -    • defaultStyle.scss
+2026-04-16 16:07:34,060 - root - INFO - File listener disabled
+2026-04-16 16:07:34,061 - root - INFO - Should live compile stylesheet?: False
+2026-04-16 16:07:34,061 - root - INFO - Should paint Qt Designer UI?: False
+2026-04-16 16:07:34,063 - root - INFO - Should live compile stylesheet?: False
+2026-04-16 16:07:34,064 - root - INFO - Should paint Qt Designer UI?: True
+2026-04-16 16:07:34,065 - root - INFO - No change for QMainWindow.customSideDrawers. Value is already src\ui_LeftSideDrawer.py,src\ui_TopSideDrawer.py,src\ui_BottomSideDrawer.py,src\ui_RightSideDrawer.py.
+2026-04-16 16:07:34,079 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 16:07:34,145 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 16:07:34,177 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 16:07:34,249 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 16:07:34,249 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 16:07:34,250 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 16:07:34,250 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 16:07:34,251 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 16:07:34,251 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 16:07:34,255 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 16:07:34,259 - root - INFO - QR code generated successfully
+2026-04-16 16:07:34,260 - root - INFO - Using cached QR code
+2026-04-16 16:07:34,361 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 16:07:34,919 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 16:08:28,098 - root - INFO - File listener disabled
+2026-04-16 16:08:30,336 - root - INFO - File listener disabled
+2026-04-16 16:08:30,361 - root - INFO - File listener disabled
+2026-04-16 16:08:30,386 - root - INFO - File listener disabled
+2026-04-16 16:08:30,405 - root - INFO - File listener disabled
+2026-04-16 16:08:30,420 - root - INFO - File listener disabled
+2026-04-16 16:08:30,438 - root - INFO - File listener disabled
+2026-04-16 16:08:30,455 - root - INFO - File listener disabled
+2026-04-16 16:08:30,476 - root - INFO - File listener disabled
+2026-04-16 16:08:30,494 - root - INFO - File listener disabled
+2026-04-16 16:08:30,512 - root - INFO - File listener disabled
+2026-04-16 16:08:30,532 - root - INFO - File listener disabled
+2026-04-16 16:08:30,551 - root - INFO - File listener disabled
+2026-04-16 16:08:30,567 - root - INFO - File listener disabled
+2026-04-16 16:08:30,585 - root - INFO - File listener disabled
+2026-04-16 16:08:40,093 - root - INFO - File listener disabled
+2026-04-16 16:11:57,559 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 16:11:57,559 - root - INFO -    • defaultStyle.scss
+2026-04-16 16:11:57,560 - root - INFO - QSS file monitor started
+2026-04-16 16:11:57,730 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 16:11:57,732 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 16:11:57,732 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 16:11:57,732 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 16:11:57,733 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 16:11:57,733 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 16:11:57,737 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 16:11:57,740 - root - INFO - QR code generated successfully
+2026-04-16 16:11:57,740 - root - INFO - Using cached QR code
+2026-04-16 16:11:57,818 - root - INFO - File listener disabled
+2026-04-16 17:39:43,591 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:39:43,758 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 17:39:43,760 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 17:39:43,761 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 17:39:43,762 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 17:39:43,762 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 17:39:43,763 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:39:43,768 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:39:43,773 - root - INFO - QR code generated successfully
+2026-04-16 17:39:43,774 - root - INFO - Using cached QR code
+2026-04-16 17:39:44,697 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:39:44,836 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 17:39:44,837 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 17:39:44,837 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 17:39:44,838 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 17:39:44,838 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 17:39:44,838 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:39:44,842 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:39:44,845 - root - INFO - QR code generated successfully
+2026-04-16 17:39:44,846 - root - INFO - Using cached QR code
+2026-04-16 17:39:49,399 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:39:49,534 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 17:39:49,535 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 17:39:49,535 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 17:39:49,536 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 17:39:49,536 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 17:39:49,537 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:39:49,541 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:39:49,544 - root - INFO - QR code generated successfully
+2026-04-16 17:39:49,545 - root - INFO - Using cached QR code
+2026-04-16 17:40:50,635 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:40:50,779 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 17:40:50,780 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 17:40:50,781 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 17:40:50,781 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 17:40:50,782 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 17:40:50,782 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:40:50,787 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:40:50,789 - root - INFO - QR code generated successfully
+2026-04-16 17:40:50,790 - root - INFO - Using cached QR code
+2026-04-16 17:41:43,573 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:41:43,719 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 17:41:43,719 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 17:41:43,720 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 17:41:43,721 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 17:41:43,721 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 17:41:43,721 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:41:43,726 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:41:43,729 - root - INFO - QR code generated successfully
+2026-04-16 17:41:43,730 - root - INFO - Using cached QR code
+2026-04-16 17:41:59,648 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 17:41:59,648 - root - INFO -    • defaultStyle.scss
+2026-04-16 17:41:59,650 - root - INFO - File listener disabled
+2026-04-16 17:41:59,653 - root - INFO - Should live compile stylesheet?: False
+2026-04-16 17:41:59,653 - root - INFO - Should paint Qt Designer UI?: False
+2026-04-16 17:41:59,654 - root - INFO - Should live compile stylesheet?: False
+2026-04-16 17:41:59,655 - root - INFO - Should paint Qt Designer UI?: True
+2026-04-16 17:41:59,656 - root - INFO - No change for QMainWindow.customSideDrawers. Value is already src\ui_LeftSideDrawer.py,src\ui_TopSideDrawer.py,src\ui_BottomSideDrawer.py,src\ui_RightSideDrawer.py.
+2026-04-16 17:41:59,682 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:41:59,775 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:41:59,824 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:00,010 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 17:42:00,011 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 17:42:00,011 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 17:42:00,012 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 17:42:00,012 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 17:42:00,013 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:42:00,017 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:42:00,021 - root - INFO - QR code generated successfully
+2026-04-16 17:42:00,022 - root - INFO - Using cached QR code
+2026-04-16 17:42:00,221 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:00,288 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:08,643 - root - INFO - Stopped QSS file monitoring
+2026-04-16 17:42:13,965 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 17:42:13,966 - root - INFO -    • defaultStyle.scss
+2026-04-16 17:42:13,968 - root - INFO - File listener disabled
+2026-04-16 17:42:13,969 - root - INFO - Should live compile stylesheet?: False
+2026-04-16 17:42:13,970 - root - INFO - Should paint Qt Designer UI?: False
+2026-04-16 17:42:13,972 - root - INFO - Should live compile stylesheet?: False
+2026-04-16 17:42:13,973 - root - INFO - Should paint Qt Designer UI?: True
+2026-04-16 17:42:13,974 - root - INFO - No change for QMainWindow.customSideDrawers. Value is already src\ui_LeftSideDrawer.py,src\ui_TopSideDrawer.py,src\ui_BottomSideDrawer.py,src\ui_RightSideDrawer.py.
+2026-04-16 17:42:14,010 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:14,106 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:14,153 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:14,344 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 17:42:14,345 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 17:42:14,345 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 17:42:14,346 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 17:42:14,346 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 17:42:14,347 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:42:14,351 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:42:14,355 - root - INFO - QR code generated successfully
+2026-04-16 17:42:14,356 - root - INFO - Using cached QR code
+2026-04-16 17:42:14,554 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:14,619 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:18,050 - root - INFO - Stopped QSS file monitoring
+2026-04-16 17:42:21,404 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 17:42:21,404 - root - INFO -    • defaultStyle.scss
+2026-04-16 17:42:21,405 - root - INFO - File listener disabled
+2026-04-16 17:42:21,405 - root - INFO - Should live compile stylesheet?: False
+2026-04-16 17:42:21,406 - root - INFO - Should paint Qt Designer UI?: False
+2026-04-16 17:42:21,407 - root - INFO - Should live compile stylesheet?: False
+2026-04-16 17:42:21,407 - root - INFO - Should paint Qt Designer UI?: True
+2026-04-16 17:42:21,408 - root - INFO - No change for QMainWindow.customSideDrawers. Value is already src\ui_LeftSideDrawer.py,src\ui_TopSideDrawer.py,src\ui_BottomSideDrawer.py,src\ui_RightSideDrawer.py.
+2026-04-16 17:42:21,433 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:21,525 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:21,572 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:21,761 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 17:42:21,762 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 17:42:21,762 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 17:42:21,763 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 17:42:21,764 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 17:42:21,764 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:42:21,769 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:42:21,772 - root - INFO - QR code generated successfully
+2026-04-16 17:42:21,773 - root - INFO - Using cached QR code
+2026-04-16 17:42:21,966 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:22,032 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:42:29,270 - root - INFO - Stopped QSS file monitoring
+2026-04-16 17:54:52,186 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:54:52,350 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 17:54:52,351 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 17:54:52,351 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 17:54:52,352 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 17:54:52,352 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 17:54:52,353 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:54:52,358 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:54:52,361 - root - INFO - QR code generated successfully
+2026-04-16 17:54:52,362 - root - INFO - Using cached QR code
+2026-04-16 17:55:00,637 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 17:55:00,638 - root - INFO -    • defaultStyle.scss
+2026-04-16 17:55:00,639 - root - INFO - QSS file monitor started
+2026-04-16 17:55:00,915 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 17:55:00,916 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 17:55:00,917 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 17:55:00,918 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 17:55:00,918 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 17:55:00,918 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:55:00,923 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:55:00,927 - root - INFO - QR code generated successfully
+2026-04-16 17:55:00,927 - root - INFO - Using cached QR code
+2026-04-16 17:55:01,015 - root - INFO - File listener disabled
+2026-04-16 17:55:04,563 - root - INFO - File listener disabled
+2026-04-16 17:55:04,590 - root - INFO - File listener disabled
+2026-04-16 17:55:04,630 - root - INFO - File listener disabled
+2026-04-16 17:55:04,671 - root - INFO - File listener disabled
+2026-04-16 17:55:04,680 - root - INFO - File listener disabled
+2026-04-16 17:55:04,719 - root - INFO - File listener disabled
+2026-04-16 17:55:04,755 - root - INFO - File listener disabled
+2026-04-16 17:55:04,792 - root - INFO - File listener disabled
+2026-04-16 17:55:04,823 - root - INFO - File listener disabled
+2026-04-16 17:55:04,856 - root - INFO - File listener disabled
+2026-04-16 17:55:04,888 - root - INFO - File listener disabled
+2026-04-16 17:55:04,922 - root - INFO - File listener disabled
+2026-04-16 17:55:04,958 - root - INFO - File listener disabled
+2026-04-16 17:55:04,993 - root - INFO - File listener disabled
+2026-04-16 17:55:05,027 - root - INFO - File listener disabled
+2026-04-16 17:55:05,061 - root - INFO - File listener disabled
+2026-04-16 17:55:05,095 - root - INFO - File listener disabled
+2026-04-16 17:55:05,127 - root - INFO - File listener disabled
+2026-04-16 17:55:05,158 - root - INFO - File listener disabled
+2026-04-16 17:55:05,903 - root - INFO - File listener disabled
+2026-04-16 17:55:05,933 - root - INFO - File listener disabled
+2026-04-16 17:55:05,958 - root - INFO - File listener disabled
+2026-04-16 17:55:05,981 - root - INFO - File listener disabled
+2026-04-16 17:55:06,008 - root - INFO - File listener disabled
+2026-04-16 17:55:06,032 - root - INFO - File listener disabled
+2026-04-16 17:55:06,060 - root - INFO - File listener disabled
+2026-04-16 17:55:06,089 - root - INFO - File listener disabled
+2026-04-16 17:55:06,103 - root - INFO - File listener disabled
+2026-04-16 17:55:06,133 - root - INFO - File listener disabled
+2026-04-16 17:55:06,165 - root - INFO - File listener disabled
+2026-04-16 17:55:06,197 - root - INFO - File listener disabled
+2026-04-16 17:55:06,231 - root - INFO - File listener disabled
+2026-04-16 17:55:06,262 - root - INFO - File listener disabled
+2026-04-16 17:55:06,293 - root - INFO - File listener disabled
+2026-04-16 17:56:42,895 - root - ERROR - Error updating designer label: libshiboken: Internal C++ object (PySide6.QtWidgets.QLabel) already deleted.
+2026-04-16 17:56:43,048 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 17:56:43,049 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 17:56:43,050 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 17:56:43,050 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 17:56:43,051 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 17:56:43,051 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:56:43,055 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 17:56:43,059 - root - INFO - QR code generated successfully
+2026-04-16 17:56:43,060 - root - INFO - Using cached QR code
+2026-04-16 18:15:30,554 - root - INFO - Registering Custom Widgets
+2026-04-16 18:15:30,558 - root - INFO - Registering QCustomQMainWindow
+2026-04-16 18:15:30,571 - root - INFO - Registering QAvatarWidget
+2026-04-16 18:15:30,574 - root - INFO - Registering QBadgeWidget
+2026-04-16 18:15:30,579 - root - INFO - Registering AnalogGaugeWidget
+2026-04-16 18:15:30,583 - root - INFO - Registering QCustomThemeList
+2026-04-16 18:15:30,589 - root - INFO - Registering QCustomThemeDarkLightToggle
+2026-04-16 18:15:30,591 - root - INFO - Registering QCustomCheckBox
+2026-04-16 18:15:30,594 - root - INFO - Registering QCustomSidebar
+2026-04-16 18:15:30,595 - root - INFO - Registering QCustomHamburgerMenu
+2026-04-16 18:15:30,598 - root - INFO - Registering QCustomHorizontalSeparator
+2026-04-16 18:15:30,603 - root - INFO - Registering QCustomVerticalSeparator
+2026-04-16 18:15:30,606 - root - INFO - Registering QCustomSidebarLabel
+2026-04-16 18:15:30,609 - root - INFO - Registering QCustomSidebarButton
+2026-04-16 18:15:30,613 - root - INFO - Registering QCustomRoundProgressBar
+2026-04-16 18:15:30,619 - root - INFO - Registering QCustomComponent
+2026-04-16 18:15:30,626 - root - INFO - Registering QCustomComponentContainer
+2026-04-16 18:15:30,629 - root - INFO - Registering QCustomQStackedWidget
+2026-04-16 18:15:30,639 - root - INFO - Registering QCustomQProgressBar
+2026-04-16 18:15:30,663 - root - INFO - Registering QCustomQRGenerator
+2026-04-16 18:15:30,717 - root - INFO - Registering QCustomLineChart
+2026-04-16 18:15:30,726 - root - INFO - QCustomLineChart registered successfully
+2026-04-16 18:15:30,726 - root - INFO - Registering QCustomBarChart
+2026-04-16 18:15:30,727 - root - INFO - QCustomBarChart registered successfully
+2026-04-16 18:15:30,728 - root - INFO - Registering QCustomAreaChart
+2026-04-16 18:15:30,728 - root - INFO - QCustomAreaChart registered successfully
+2026-04-16 18:15:30,729 - root - INFO - Registering QCustomPieChart
+2026-04-16 18:15:30,730 - root - INFO - QCustomPieChart registered successfully
+2026-04-16 18:15:30,730 - root - INFO - ✓ All chart widgets registered successfully!
+2026-04-16 18:15:30,756 - root - DEBUG - Failed to load Product Sans font
+2026-04-16 18:15:30,758 - root - DEBUG - Added SASS file to watcher: D:\Vishwa\Qt\25ThemeEngine\Qss\scss\defaultStyle.scss
+2026-04-16 18:15:30,758 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 18:15:30,759 - root - INFO -    • defaultStyle.scss
+2026-04-16 18:15:30,760 - root - INFO - File listener disabled
+2026-04-16 18:15:30,760 - root - INFO - Copied variable 'CARD_RADIUS' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,760 - root - INFO - Copied variable 'SPACING_MD' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,761 - root - INFO - Copied variable 'Pressed-color' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,761 - root - INFO - Copied variable 'FOOTER_BG' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,762 - root - INFO - Copied variable 'GRADIENT' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,762 - root - INFO - Copied variable 'SPACING_LG' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,763 - root - INFO - Copied variable 'Hover-color' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,763 - root - INFO - Copied variable 'Disabled-color' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,763 - root - INFO - Copied variable 'CARD_BG' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,764 - root - INFO - Copied variable 'NAV_BG' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,764 - root - INFO - Copied variable 'SPACING_SM' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,765 - root - INFO - Copied variable 'HOVER_GLOW' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,765 - root - INFO - Copied variable 'BORDER_COLOR' from theme 'QT-Light-theme' to theme 'Light'
+2026-04-16 18:15:30,766 - root - INFO - Copied variable 'CARD_RADIUS' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,766 - root - INFO - Copied variable 'SPACING_MD' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,767 - root - INFO - Copied variable 'Pressed-color' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,767 - root - INFO - Copied variable 'FOOTER_BG' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,768 - root - INFO - Copied variable 'GRADIENT' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,768 - root - INFO - Copied variable 'SPACING_LG' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,768 - root - INFO - Copied variable 'Hover-color' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,769 - root - INFO - Copied variable 'Disabled-color' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,769 - root - INFO - Copied variable 'CARD_BG' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,770 - root - INFO - Copied variable 'NAV_BG' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,770 - root - INFO - Copied variable 'SPACING_SM' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,771 - root - INFO - Copied variable 'HOVER_GLOW' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,771 - root - INFO - Copied variable 'BORDER_COLOR' from theme 'Light' to theme 'Dark'
+2026-04-16 18:15:30,772 - root - INFO - Copied variable 'Hover-color' from theme 'Light' to theme 'QT-Dark-theme'
+2026-04-16 18:15:30,772 - root - INFO - Copied variable 'Pressed-color' from theme 'Light' to theme 'QT-Dark-theme'
+2026-04-16 18:15:30,773 - root - INFO - Copied variable 'Disabled-color' from theme 'Light' to theme 'QT-Dark-theme'
+2026-04-16 18:15:30,773 - root - INFO - Should live compile stylesheet?: False
+2026-04-16 18:15:30,774 - root - INFO - Should paint Qt Designer UI?: False
+2026-04-16 18:15:30,782 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 18:15:30,783 - root - INFO -    • defaultStyle.scss
+2026-04-16 18:15:30,784 - root - INFO - QSS file monitor started
+2026-04-16 18:15:30,785 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 18:15:30,786 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 18:15:30,786 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 18:15:30,787 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 18:15:30,787 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 18:15:30,788 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 18:15:30,791 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 18:15:30,798 - root - INFO - QR code generated successfully
+2026-04-16 18:15:30,802 - root - INFO - Using cached QR code
+2026-04-16 18:15:30,806 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 18:15:30,807 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 18:15:30,814 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 18:15:30,816 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 18:15:30,820 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 18:15:30,822 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 18:15:30,827 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 18:15:30,828 - root - INFO - Applied App Theme (Dark: True) to chart
+2026-04-16 18:15:31,080 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 18:15:31,081 - root - INFO -    • defaultStyle.scss
+2026-04-16 18:15:31,082 - root - INFO - QSS file monitor started
+2026-04-16 18:15:31,084 - root - INFO - File listener disabled
+2026-04-16 18:15:31,090 - root - INFO - File listener disabled
+2026-04-16 18:15:47,514 - root - INFO - SUCCESS: ✅ Live monitoring QSS/SCSS files
+2026-04-16 18:15:47,514 - root - INFO -    • defaultStyle.scss
+2026-04-16 18:15:47,515 - root - INFO - QSS file monitor started
+2026-04-16 18:15:47,529 - root - INFO - Theme changed detected in QCustomQRGenerator
+2026-04-16 18:15:47,529 - root - INFO - Updated fill color from palette: #ffffff
+2026-04-16 18:15:47,530 - root - INFO - Updated background color from palette: #1e1e1e
+2026-04-16 18:15:47,530 - root - INFO - Updated gradient start color from palette: #0078d4
+2026-04-16 18:15:47,530 - root - INFO - Updated gradient end color from palette: #d45c00
+2026-04-16 18:15:47,531 - root - INFO - Generating new QR code with fill: #ffffff, background: #1e1e1e
+2026-04-16 18:15:47,534 - root - INFO - Using basic styling with fill: #ffffff, background: #1e1e1e
+2026-04-16 18:15:47,537 - root - INFO - QR code generated successfully
+2026-04-16 18:15:47,538 - root - INFO - Using cached QR code
+2026-04-16 18:15:50,959 - root - INFO - File listener disabled

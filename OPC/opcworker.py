@@ -34,12 +34,16 @@ class OPCWorker(QThread):
             last_log_check = 0.0
         if  last_csv_check is None:
             last_csv_check = 0.0
+
+        self.wait(5000)    
         print("work Start")
+
         
-        while True:
-# 🔥 EXIT IMMEDIATELY
+        while False:
+            # 🔥 EXIT IMMEDIATELY
             if self.isInterruptionRequested():
                 break
+
 
             # Read all process tags from OPC server.
             # For future addition, update core/tags.py and OPC/nodes.py, then add reads here.

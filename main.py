@@ -18,9 +18,11 @@ from Custom_Widgets import *
 from Custom_Widgets.QAppSettings import QAppSettings
 ########################################################################
 from PySide6.QtWidgets import QApplication
+from PySide6.QtCore import QTimer
+from PySide6.QtGui import QColor
 
 from datetime import datetime
-from Extra.Functions import UIController
+from Navi.Functions import UIController
 
 from functools import partial
 from Navi.Connect_Buttons import ConnectButtons
@@ -39,7 +41,7 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
 
         self.ui_controller = UIController(self.ui)
-        self.plc = Exopc(self.ui, self.ui_controller)
+        # self.plc = Exopc(self.ui, self.ui_controller)
         self.button_connector = ConnectButtons(self.ui, self.ui_controller, self)
 
         ########################################################################
@@ -89,12 +91,13 @@ class MainWindow(QMainWindow):
         init_logger()
         self.plc_client = OPCClient()
         self.worker = OPCWorker(self.plc_client)
-
-    def closeEvent(self, event):
+       
+    def closeEvent(self, event):    
         try:
             if hasattr(self, "plc"):
                 self.plc.stop()
         except Exception:
+            self.plc.stop()
             pass
 
         event.accept()
