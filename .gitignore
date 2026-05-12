@@ -16,3 +16,8 @@ report/
 logs/
 data_logs/
 Database/*.db
+
+# TempFolder For Generate DB
+
+TempCsv/
+reports/

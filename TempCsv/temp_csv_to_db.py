@@ -4,6 +4,7 @@ import argparse
 import csv
 import re
 import sqlite3
+from datetime import datetime
 from pathlib import Path
 
 
@@ -37,6 +38,16 @@ def parse_batch_no(csv_path: Path) -> str | None:
     if not match:
         return None
     return match.group("batch_no")
+
+
+def parse_timestamp(value: str) -> str | None:
+    value = value.strip()
+    for date_format in ("%d-%m-%Y ; %H:%M:%S", "%d-%m-%Y; %H:%M:%S", "%d-%m-%Y %H:%M:%S"):
+        try:
+            return datetime.strptime(value, date_format).strftime("%Y-%m-%d %H:%M:%S")
+        except ValueError:
+            continue
+    return None
 
 
 def to_float(value: str | None) -> float | None:
@@ -78,7 +89,7 @@ def create_schema(conn: sqlite3.Connection) -> None:
 
         CREATE VIEW daily_report AS
         SELECT
-            substr(DateTime, 1, 10) AS ReportDate,
+            date(DateTime) AS ReportDate,
             BatchNo,
             COUNT(*) AS TotalRows,
             {daily_temp_avgs}
@@ -87,7 +98,7 @@ def create_schema(conn: sqlite3.Connection) -> None:
 
         CREATE VIEW weekly_report AS
         SELECT
-            strftime('%Y-W%W', substr(DateTime, 7, 4) || '-' || substr(DateTime, 4, 2) || '-' || substr(DateTime, 1, 2)) AS ReportWeek,
+            strftime('%Y-W%W', DateTime) AS ReportWeek,
             BatchNo,
             COUNT(*) AS TotalRows,
             {weekly_temp_avgs}
@@ -96,7 +107,7 @@ def create_schema(conn: sqlite3.Connection) -> None:
 
         CREATE VIEW monthly_report AS
         SELECT
-            substr(DateTime, 7, 4) || '-' || substr(DateTime, 4, 2) AS ReportMonth,
+            strftime('%Y-%m', DateTime) AS ReportMonth,
             BatchNo,
             COUNT(*) AS TotalRows,
             {monthly_temp_avgs}
@@ -128,11 +139,12 @@ def import_csv(conn: sqlite3.Connection, csv_path: Path) -> int:
         reader = csv.DictReader(handle)
         for row in reader:
             raw_date_time = (row.get("Date & Time") or "").strip()
-            if not raw_date_time:
+            timestamp = parse_timestamp(raw_date_time)
+            if not timestamp:
                 continue
             values = [
                 batch_no,
-                raw_date_time,
+                timestamp,
                 *(to_float(row.get(column)) for column in TEMP_COLUMNS),
             ]
             conn.execute(insert_sql, values)
