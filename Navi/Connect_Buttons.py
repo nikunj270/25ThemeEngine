@@ -1,6 +1,7 @@
 from functools import partial
 from PySide6.QtCore import QTimer
 
+
 class ConnectButtons:
 
     def __init__(self, ui, ui_controller, main_window):
@@ -9,7 +10,7 @@ class ConnectButtons:
         self.main_window = main_window   # for getHamburgerMenu()
         self.connect_sidebar_buttons()
         QTimer.singleShot(1000, self.connect_drawer_buttons)  # Delay drawer connections to ensure menus are initialized
-        
+           
 
     # -----------------------------
     # Sidebar Connections
@@ -18,7 +19,8 @@ class ConnectButtons:
         leftcomp = self.ui.leftSidebarComponentContainer.component
         rightcomp = self.ui.rightSidebarComponentContainer.component
         bodycomp = self.ui.MainBodyComponentContainer.component
-
+        headcomp = self.ui.HeaderComponentContainer.component
+        
         if not leftcomp:    
             return
         if not rightcomp:    
@@ -79,7 +81,12 @@ class ConnectButtons:
                 btn.clicked.connect(
                     partial(self.ui_controller.log_to_console,
                             f"Main Body : {label} button clicked!")
-                )            
+                )
+
+                
+
+    
+                                
 
     # -----------------------------
     # Drawer Connections

@@ -3,23 +3,52 @@ from opcua import Client,ua
 import time
 from PySide6.QtWidgets import * #QMessageBox, QWidget
 from PySide6.QtCore import *
+from PySide6.QtCore import Signal, QObject
 from PySide6 import *
-class OPCClient:
+class OPCClient(QObject):
+    status_signal = Signal(str)  # Signal to send status updates to the UI
     
-    def __init__(self, endpoint = "opc.tcp://192.168.4.20:4840"):
+    def __init__(self, endpoint = "opc.tcp://192.168.30.15:4840", parent=None):
         #self.opc_client = None
+        super().__init__(parent)
+
         self.client = Client(endpoint)
         self.subscription = None
+        self.is_connected = False
         success, msg = self.connect()
+        self.last_status_msg = msg
         print(f"-------------OPC Client: {msg}-----")
+        self._set_component_status_text(msg)
+        self.status_signal.emit(msg)
+        #self.Headerstatus(msg)
+
+    def _set_component_status_text(self, msg: str):
+        """Directly update header component status text if available."""
+        try:
+            parent = self.parent()
+            if not parent:
+                return
+
+            component = parent.ui.HeaderComponentContainer.component
+            if component and hasattr(component, "statusconnect"):
+                component.statusconnect.setText(msg)
+        except Exception as e:
+            # UI might not be ready yet; signal flow still handles updates.
+            print(f"Error updating header status: {e}")
+            pass
+
+    def Headerstatus(self, msg):
+        self._set_component_status_text(msg)
 
     def connect(self):
         try:
             self.client.connect()
+            self.is_connected = True
             #self.worker_done("Connected....OPC")
             return True, "Connected to OPC UA server"
            
         except Exception as e:
+            self.is_connected = False
             #QMessageBox.critical(self, "Error", "PLC Not Connected!",StandardButton = isinstance(QMessageBox.StandardButton.Ok, tuple),defaultButton= isinstance(QMessageBox.StandardButton.NoButton, tuple))
             # QtGui.QMessageBox.critical(QWidget | None,
             #                       "ERROR","str",
@@ -65,7 +94,21 @@ class OPCClient:
 
 
     def disconnect(self):
-        self.client.disconnect()
+        if not self.is_connected:
+            return True, "Already disconnected"
+
+        try:
+            self.client.disconnect()
+            self.is_connected = False
+            return True, "Disconnected"
+        except OSError as e:
+            # WinError 10038 means socket already closed; treat as safe.
+            if getattr(e, "winerror", None) == 10038:
+                self.is_connected = False
+                return True, "Socket already closed"
+            return False, f"Disconnect failed: {e}"
+        except Exception as e:
+            return False, f"Disconnect failed: {e}"
 
     def write_bool(self, node_id, value):
         try:

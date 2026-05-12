@@ -23,6 +23,18 @@
     {
       "name": "BtnRightSideDrawer",
       "icon": "../Qss/icons/icons/font_awesome/solid/chevron-right.png"
+    },
+    {
+      "name": "saveRecipeBtn",
+      "icon": "../Qss/icons/icons/material_design/save.png"
+    },
+    {
+      "name": "pNextBtn",
+      "icon": "../Qss/icons/icons/font_awesome/solid/share.png"
+    },
+    {
+      "name": "pushButton2",
+      "icon": "../Qss/icons/icons/font_awesome/brands/adn.png"
     }
   ],
   "QCustomSidebarLabel": [

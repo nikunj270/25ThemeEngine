@@ -958,6 +958,30 @@ QLabel {
     margin: 0px;
     color: $COLOR_TEXT_1;
 
+    &[frameShape="1"],
+    &[frameShape="2"],
+    &[frameShape="3"],
+    &[frameShape="6"] {
+        border: $BORDER_2;
+        border-radius: $SIZE_BORDER_RADIUS;
+    }
+
+    &[frameShape="4"] {
+        min-height: 2px;
+        max-height: 2px;
+        padding: 0px;
+        border: none;
+        background-color: $COLOR_BACKGROUND_4;
+    }
+
+    &[frameShape="5"] {
+        min-width: 2px;
+        max-width: 2px;
+        padding: 0px;
+        border: none;
+        background-color: $COLOR_BACKGROUND_4;
+    }
+
     &:disabled {
         background-color: $COLOR_BACKGROUND_1;
         border: 0px solid $COLOR_BACKGROUND_4;

@@ -660,6 +660,21 @@ QLabel {
   padding: 2px;
   margin: 0px;
   color: black; }
+  QLabel[frameShape="1"], QLabel[frameShape="2"], QLabel[frameShape="3"], QLabel[frameShape="6"] {
+    border: 1px solid #D8D8D8;
+    border-radius: 4px; }
+  QLabel[frameShape="4"] {
+    min-height: 2px;
+    max-height: 2px;
+    padding: 0px;
+    border: none;
+    background-color: #D8D8D8; }
+  QLabel[frameShape="5"] {
+    min-width: 2px;
+    max-width: 2px;
+    padding: 0px;
+    border: none;
+    background-color: #D8D8D8; }
   QLabel:disabled {
     background-color: white;
     border: 0px solid #D8D8D8;
@@ -2265,3 +2280,15 @@ QPushButton:disabled, QCustomSidebarButton:disabled {
   font-size: 12px;
   padding: 2px 0;
   margin-bottom: 8px; }
+
+#MainStack QPushbutton {
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #4a90d9, stop:1 #2a6ab5);
+  border-bottom: 4px solid #1a4a8a;
+  border-right: 2px solid #1a4a8a;
+  border-top: 1px solid #5a9fe9;
+  border-radius: 8px;
+  color: white; }
+  #MainStack QPushbutton:active {
+    border-bottom: 1px solid #1a4a8a;
+    border-right: 1px solid #1a4a8a;
+    padding-top: 3px; }

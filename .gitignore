@@ -10,6 +10,7 @@ __pycache__/
 # Qt / build
 build/
 dist/
+report/
 
 # Runtime data
 logs/

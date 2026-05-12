@@ -24,7 +24,7 @@ class Ui_CustomComponent(object):
     def setupUi(self, CustomComponent):
         if not CustomComponent.objectName():
             CustomComponent.setObjectName(u"CustomComponent")
-        CustomComponent.resize(832, 60)
+        CustomComponent.resize(450, 46)
         self.horizontalLayout = QHBoxLayout(CustomComponent)
         self.horizontalLayout.setSpacing(10)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
@@ -33,6 +33,11 @@ class Ui_CustomComponent(object):
         self.label.setObjectName(u"label")
 
         self.horizontalLayout.addWidget(self.label, 0, Qt.AlignmentFlag.AlignLeft)
+
+        self.statusconnect = QLabel(CustomComponent)
+        self.statusconnect.setObjectName(u"statusconnect")
+
+        self.horizontalLayout.addWidget(self.statusconnect)
 
         self.widget = QWidget(CustomComponent)
         self.widget.setObjectName(u"widget")
@@ -83,6 +88,7 @@ class Ui_CustomComponent(object):
     def retranslateUi(self, CustomComponent):
         CustomComponent.setWindowTitle(QCoreApplication.translate("CustomComponent", u"CustomComponent", None))
         self.label.setText(QCoreApplication.translate("CustomComponent", u"NEW THEME OF ROSH", None))
+        self.statusconnect.setText(QCoreApplication.translate("CustomComponent", u"TextLabel", None))
         self.pushButton.setText("")
         self.pushButton_2.setText("")
         self.pushButton_3.setText("")

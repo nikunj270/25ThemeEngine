@@ -12,9 +12,9 @@ Qt dashboard application built with `PySide6` and `QT-PyQt-PySide-Custom-Widgets
 ## Main entry points
 
 - `main.py` starts the application window
-- `Extra/exopc.py` connects UI widgets to live OPC updates
-- `Extra/opcua_client.py` manages the background OPC UA client thread
+- `OPC/` connects UI Widgets to live OPC Updtaes 
 - `Logger/` and `Alarm/` contain persistence helpers
+- `Navi/` contain of UI Functions
 
 ## Run locally
 
@@ -22,6 +22,10 @@ Qt dashboard application built with `PySide6` and `QT-PyQt-PySide-Custom-Widgets
 pip install -r requirements.txt
 python main.py
 ```
+## Notused 
+
+- `Extra/exopc.py` connects UI widgets to live OPC updates
+- `Extra/opcua_client.py` manages the background OPC UA client thread
 
 ## Notes
 

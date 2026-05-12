@@ -24,6 +24,10 @@
                     "Icons-color": "#41cd52",
                     "Default-Theme": true,
                     "Other-Variables": {
+                        "BORDER_4" : "4px solid $COLOR_BACKGROUND_4",
+                        "BORDER_SELECTION_4" : "4px solid $COLOR_ACCENT_2",
+                        "BORDER_SELECTION_5" : "4px solid #012532",
+                        
                         "CARD_RADIUS": "12px",
                         "FOOTER_BG": "#e5e5e5",
                         "NAV_BG": "#f0f0f0",

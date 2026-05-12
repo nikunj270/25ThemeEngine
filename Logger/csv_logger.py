@@ -6,10 +6,10 @@ from Tag.tags import Tags
 
 FILE_PATH = os.path.join("data_logs", "report/csv/trend_log.csv")
 
-BF = "data_logs"
+BF = "report/csv"
 
 def init_csv():
-    os.makedirs("data_logs", exist_ok=True)
+    os.makedirs("report/csv", exist_ok=True)
 
     # Create file with header if not exists
     if not os.path.exists(FILE_PATH):
@@ -30,9 +30,9 @@ def log_to_csv():
     file_p = get_file_path()
 
     D0 = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    D1 = Tags.Temperature
-    D2 = Tags.Motor
-    D3 = Tags.Pressure
+    D1 = Tags.M1real
+    D2 = Tags.M1bool
+    D3 = Tags.M2int1
 
     if not os.path.exists(file_p):
         #init_csv()
